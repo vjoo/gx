@@ -1,0 +1,157 @@
+/* 整理布局的css 和 loadingBox css*/
+#container {
+    width: 100%;
+    height: 100%;
+    background: #05050F;
+}
+.screen-container-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 999;
+    width: 390px;
+    box-sizing: border-box;
+    height: 850px;
+}
+.map {
+    width: 1920px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom:0;
+    right:0
+}
+.screen-container-wrapper.container-box-middle{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    max-width: 1920px;
+    margin: 0 auto;
+    transform-origin: 50% 0;
+    height: 1080px;
+}
+.middle-inner{
+    top: 0;
+    left:390px;
+    right:390px;
+    width: auto;
+    z-index: 1000;
+}
+.screen-container-wrapper.container-box-left{
+    width: 390px;
+    top: 0;
+    transform-origin: 0 0;
+}
+.screen-container-wrapper.container-box-left .box-wrapper{
+    width: 390px;
+    margin-left:24px;
+    margin-bottom: 19px;
+}
+
+.screen-container-wrapper.container-box-right{
+    width: 390px;
+    left: auto;
+    top: 0;
+    transform-origin: 100% 0%;
+    z-index: 20;
+}
+.loading{
+    width: 80px;
+    height: 40px;
+    margin: -20px auto 0;
+    position: relative;
+    top: 50%;
+}
+.loading span{
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    margin: 0 3px;
+    border-radius: 4px;
+    background: lightgreen;
+    -webkit-animation: load 1s ease infinite;
+}
+@-webkit-keyframes load{
+    0%,100%{
+        height: 40px;
+        background: lightgreen;
+    }
+    50%{
+        height: 70px;
+        margin: -15px 3px;
+        background: lightblue;
+    }
+}
+.loading span:nth-child(2){
+    -webkit-animation-delay:0.2s;
+}
+.loading span:nth-child(3){
+    -webkit-animation-delay:0.4s;
+}
+.loading span:nth-child(4){
+    -webkit-animation-delay:0.6s;
+}
+.loading span:nth-child(5){
+    -webkit-animation-delay:0.8s;
+}
+.vshow{
+    visibility:visible;
+}
+.vhide{
+    visibility:hidden;
+}
+.screen-sub-title,.screen-sub-title1{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    height: 43px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.screen-sub-title span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 7px;
+}
+.screen-sub-title1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 53px;
+    justify-content: space-between;
+}
+.screen-sub-title1 p{
+    font-size: 20px;
+    /*font-family: Alibaba PuHuiTi-Medium, Alibaba PuHuiTi;*/
+    display: inline;
+    color: #fff;
+    line-height: 53px;
+}
+.screen-sub-title1 .left-box2-title-right{
+    width: 292px;
+    height: 57px;
+    background: #14142B;
+    line-height: 53px;
+    border-radius: 6px;
+    opacity: 1;
+    text-align: center;
+}
+.screen-sub-title1 .right-box-select,.screen-sub-title1 .left-box-select{
+    line-height: 29px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.screen-sub-title3{
+    position: absolute;
+    top: -42px;
+    font-size: 20px;
+    /* font-family: Alibaba PuHuiTi-Medium, Alibaba PuHuiTi; */
+    color: #fff;
+}
+.screen-sub-title4{
+
+}
