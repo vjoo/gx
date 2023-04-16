@@ -1,0 +1,209 @@
+.right-box1{
+  margin: 10px auto 24px;
+  height: 275px;
+  background: #14142B;
+  box-shadow: 0px 4px 6px 0px rgba(62,73,84,0.04);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 10px 26px 10px;
+  position: relative;
+}
+.right-box2{
+  margin: 0 auto 24px;
+  height: 284px;
+  background: #14142B;
+  box-shadow: 0px 4px 6px 0px rgba(62,73,84,0.04);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 10px 26px 30px;
+}
+.right-box3,.right-box4{
+  margin:0 auto 24px;
+  height: 172px;
+  background: #14142B;
+  box-shadow: 0px 4px 6px 0px rgba(62,73,84,0.04);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 10px 26px 30px;
+}
+.right-box4{
+  margin:0 auto 0;
+}
+.right-box2-part{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.right-box2-part li{
+  margin-top: 15px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+.right-box2-part.other{
+  margin-top:25px;
+}
+.right-box2-part h4{
+  font-size: 20px;
+  text-align: center;
+  /*font-family: Alibaba PuHuiTi-Medium, Alibaba PuHuiTi;*/
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+.right-box2-part h4.other{
+  margin-bottom: 15px;
+}
+.right-box2-part p{
+  font-size: 16px;
+  text-align: center;
+  /*font-family: Alibaba PuHuiTi-Regular, Alibaba PuHuiTi;*/
+  font-weight: 400;
+  color: #9E9E9E;
+}
+.right-decorate-part{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.right-decorate-part li{
+  margin-top: 15px;
+  flex:1;
+  margin-bottom: 15px;
+}
+.right-decorate-part h4{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.right-decorate-part p{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: #9E9E9E;
+}
+.right-search-btn{
+  margin: 13px auto 0;
+  width: 123px;
+  height: 32px;
+  display: block;
+  background: #023AFF;
+  border-radius: 6px 6px 6px 6px;
+  outline: 0;
+  color:#fff;
+  border: 1px solid #023AFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  line-height: 32px;
+  cursor: pointer;
+}
+.right-select-btn{
+  cursor: pointer;
+  width: 98px;
+  height: 32px;
+  border: 0;
+  outline: 0;
+  background: #023AFF;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 32px;
+}
+.light-dialog{
+  width: 1200px;
+  height: 422px;
+  background: #14142B;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+  border-radius: 20px 20px 20px 20px;
+  opacity: 1;
+  top:50%;
+  left:50%;
+  padding: 28px 30px 0px;
+  position: absolute;
+  margin-left: -600px;
+  margin-top:-210px;
+  z-index:2100;
+  transform-origin: 50% 50%;
+}
+.light-dialog.light-dialog1{
+  width: 800px;
+  margin-left: -400px;
+}
+.dialog-title-box{
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.dialog-title-box strong{
+  color:#fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.dialog-close{
+  margin-bottom: 17px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icon_cross.png) no-repeat 50% 50%;
+}
+.light-dialog-wrapper{
+  height: calc(100% - 70px);
+  margin-left:-40px;
+  margin-right:-40px;
+}
+.dialog1-box-select{
+  position: absolute;
+  right:30px;
+  top:69px;
+  z-index: 5;
+}
+.modal-enter-active {
+  animation: modalIn 0.2s linear;
+}
+
+.modal-leave-active {
+  animation: modalOut 0.2s linear;
+}
+
+@keyframes modalIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalOut {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+.dialog-bg {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2099;
+  height: 100vh;
+  display: none;
+}
