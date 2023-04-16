@@ -85,9 +85,25 @@ a.btn_b {
     border: 1px solid rgb(2, 167, 240);
     color: #ffffff;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 2px;display: block;
 }
-
+a.btn_c,
+a.btn_d {
+    text-align: center;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px 28px;
+    background: linear-gradient(106deg, rgba(255, 255, 255, 0.00) 0%, #015478 100%);
+    border: 1px solid rgb(2, 167, 240);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 2px;
+    display: none;
+}
+ 
+.firing a.btn_c,.firing a.btn_d{display: block;}
+.firing a.btn_a,.firing a.btn_b{display: none;}
 .b_title {
     font-size: 32px;
     text-align: center;
@@ -230,24 +246,45 @@ a.btn_b {
     padding: 10px 15px 15px 15px;
     margin-top: 20px;
 }
+.bx_fs.gu {
+    display: none;
+    height: 240px;
+    border: 1px solid #02A7F0;
+    padding: 10px 15px 15px 15px;
+    margin-top: 20px;
+}
+.firing .bx_fs.gu{display: flex;flex: 1;}
+.firing .bx,.firing .zx{display: none;}
+
 
 .dx {
     height: 70px;
 }
-
+.firing .sx{display: none;}
 .sx {
     flex: 1;
     padding: 10px 15px 15px 15px;
     border: 1px solid #02A7F0;
 }
-
+.sx_fs {display: none;}
+.firing .sx_fs {
+    /* flex: 1;
+    padding: 10px 15px 15px 15px;
+    border: 1px solid #02A7F0; */
+    height: 180px;
+}
+.appbox .hx{display: none;}
 .gx {
     height: 550px;
     border: 1px solid #02A7F0;
     padding: 10px 15px 15px 15px;
     margin-top: 20px;
 }
-
+.hx {
+     flex: 1;
+    border: 1px solid #02A7F0;
+    padding: 10px 15px 15px 15px; 
+}
 .title_zj {
     display: flex;
     flex-direction: row;
@@ -635,9 +672,9 @@ a.zbbtn {
 .video_box li .video_box_tit {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     color: #ffffff;
-    width: 120px;
+    width: 110px;
     height: 24px;
     font-size: 14px;
     z-index: 10;
@@ -962,10 +999,24 @@ table.reference td {
     margin: 0 auto;
     height: 410px;
 }
-
+.list_sjz.fs_left { 
+    position: relative;
+    padding: 10px;
+    overflow: auto;
+    width: 360px;
+    margin: 10px auto; 
+    height: 130px;
+}
+.list_sjz.fs_left .line {
+    position: absolute;
+    width: 1px;
+    height: 130%;
+    background: #eee;
+    top: 3px;
+    left: 9px;
+}
 /**/
-.list_sjz {
-
+.list_sjz { 
     position: relative;
     padding: 10px;
     overflow: auto;
@@ -1004,7 +1055,7 @@ table.reference td {
     border-radius: 50%;
     background: #ccc;
     position: absolute;
-    top: 10px;
+    top: 16px;
     left: -19px;
 }
 
@@ -1022,3 +1073,25 @@ table.reference td {
     height: 80px;
     margin-right: 20px;
 }
+a.zbbtn_fs {
+    display: block; 
+    font-size: 14px; 
+    color: #ffffff;
+    text-decoration: none;  
+}
+.bb_fs{display: flex;
+    height: 30px;
+    background-color: #0A1D56;
+    border: 1px solid #02A7F0;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100px;
+    justify-content: center;}
+.bb_fs img{width: 16px;height: 16px;display: block;margin-right: 8px;}
+.fs_navs_1{font-size: 16px;color: red;line-height: 28px;}
+.fs_navs_2{font-size: 14px;color: #999;line-height: 24px;}
+.fs_navs_3{font-size: 14px;color: #fff;}
+.fs_navs{padding: 10px;
+    border: 1px dotted #999;max-height:140px;background-color: #0A1D56;
+     }
