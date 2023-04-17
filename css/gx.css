@@ -273,7 +273,8 @@ a.btn_d {
     border: 1px solid #02A7F0; */
     height: 180px;
 }
-.appbox .hx{display: none;}
+.appbox .hx{display:none}
+
 .gx {
     height: 550px;
     border: 1px solid #02A7F0;
@@ -481,7 +482,7 @@ a.btn_d {
 .es {
     height: 200px;
 }
-
+.fss_es{ height: 200px;}
 .menu {
     display: block;
     width: 20px;
@@ -817,12 +818,15 @@ a.zbbtn {
     background: #14142B;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    opacity: 1;
-    margin: 10px auto;
+    /* opacity: 1; */
+    /* margin: 10px auto; */
     padding: 20px 20px 30px 20px;
-    overflow: auto;
-    overflow-x: hidden;
-    /* position: absolute;  */
+    /* overflow: auto;
+    overflow-x: hidden; */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: 2100;
 }
 
@@ -843,7 +847,7 @@ a.zbbtn {
     cursor: pointer;
     width: 24px;
     height: 24px;
-    background: url(img/icon_cross.png) no-repeat 50% 50%;
+    background: url('../img/icon_cross.png') no-repeat 50% 50%;
     position: absolute;
     right: 0px;
     top: 0px;
