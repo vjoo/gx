@@ -273,8 +273,7 @@ a.btn_d {
     border: 1px solid #02A7F0; */
     height: 180px;
 }
-.appbox .hx{display:none}
-
+.appbox .hx{display: none;}
 .gx {
     height: 550px;
     border: 1px solid #02A7F0;
@@ -482,7 +481,7 @@ a.btn_d {
 .es {
     height: 200px;
 }
-.fss_es{ height: 200px;}
+
 .menu {
     display: block;
     width: 20px;
